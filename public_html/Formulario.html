@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+</head>
+<body>
+    <center><h1><u>Enter your information</u></h1></center>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>Personal</legend>
+            <label for="name">Name: <input id="name" placeholder="Alex" name="name" type="text" required></label>
+            <label for="birth">Date of Birth <input id="birth" placeholder="dd/mm/yy" name="birth" type="date" required></label>
+            <label for="animal">Favourite Animal: <input id="animal" placeholder="Giraffe" name="animal" type="text" required></label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Account</legend>
+            <label for="email">Email: <input id="email" placeholder="xxxxx@zzzz.yyy" name="email" type="email" required></label>
+            <label for="pass">Password: <input id="pass" placeholder="*****" name="pass" type="password" pattern="{5,15}" required></label>
+            <label for="passcon">Confirm Password: <input id="passcon" placeholder="*****" name="passcon" type="password" pattern="{5,15}" required></label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Contact</legend>
+            <label for="address">Address: <input id="address" placeholder ="Address" name="address" type="text" required></label>
+            <label for="city">City: <input id="city" placeholder="San Salvador" name="city" type="text" required></label>
+            <label for="country">Country: <input id="country" placeholder="El Salvador" name="country" type="text" required></label>
+            <label for="phone">Phone Number: <input id="phone" placeholder="3432-5343" name="phone" type="tel" pattern="[0-9]{4}[-][0-9]{4}" minlength="9" maxlength="9" required></label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Send"> <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
